@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/image/chatgpt.png" type="image/x-icon">
+    <title>Pr-GPT</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="pageContent">
+      <section class="side-bar">
+        <button id="newChat">+ New Chat</button>
+        <ul class="history"></ul>
+        <footer>Pritam &copy;2023 <br /></footer>
+      </section>
+
+      <section class="main">
+        <h1>Pr-GPT</h1>
+        <ul class="feed">
+          <li class="userFeed">
+            <img src="/image/user.png" alt="" />
+            <p id="userInput"></p>
+          </li>
+          <li class="gptFeed">
+            <img src="/image/chatgpt.png" alt="" />
+            <p id="gptOutput"></p>
+          </li>
+        </ul>
+        <div class="bottom-section">
+          <form class="input-form">
+            <input id="input" type="text" placeholder="Send a massage..." />
+            <div id="submit">➢</div>
+          </form>
+          <p>
+            ChatGPT Mar 23 Version. Free Research Preview.ChatGPT may produce
+            inaccurate information about people, places, or facts.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

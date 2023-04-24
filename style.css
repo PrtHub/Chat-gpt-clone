@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  background-color: #343541;
+}
+
+.pageContent {
+  display: flex;
+}
+
+.side-bar {
+  width: 300px;
+  height: 100vh;
+  background-color: #202123;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-bar button {
+  background-color: transparent;
+  color: #fff;
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.side-bar .history {
+   padding: 0 10px;
+   height: 100%;
+  overflow-y: scroll;
+}
+
+.history p {
+  list-style: none;
+  padding: 15px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow-y: auto;
+}
+
+.history p:hover {
+   background-color: #3e3f4b;
+}
+
+.side-bar footer{
+  border-top: 0.5px solid rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  line-height: 20px;
+  padding: 20px;
+  text-align: left;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.main h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: auto;
+}
+
+.main .feed {
+  width: 100%;
+  height: 100%;
+
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+ overflow-x: hidden;
+ overflow-y: scroll;
+}
+
+.feed li{
+  list-style: none;
+}
+
+.feed .userFeed{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content:flex-start ;
+
+  padding: 20px 60px;
+}
+
+.feed .gptFeed{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content:flex-start ;
+
+  background-color: #444654;
+  padding: 20px 60px;
+}
+
+.gptFeed img, .userFeed img {
+  width: 50px;
+  height: 50px;
+
+  margin-right: 10px;
+}
+
+.gptFeed #gptOutput, .userFeed #userInput {
+    max-width: 800px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: start;
+
+} 
+
+.bottom-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-form{
+  width: 100%;
+  max-width: 800px;
+
+  position: relative;
+}
+
+.input-form #submit {
+  position: absolute;
+  top: 10px;
+  right: -14px;
+
+  opacity: 0.3;
+  transform: rotate(-30deg);
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.input-form input{
+  width: 100%;
+  padding: 17px 15px;
+  background-color: #40414f;
+  color: #8a8a9c;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.bottom-section p {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 12px;
+  padding: 20px;
+}
